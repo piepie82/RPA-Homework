@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lama Robo Advisor Home</title>
+</head>
+<body>
+    <div style="text-align: center; margin-top: 50px;">
+        <!-- Displaying a personalized welcome message -->
+        <h2>Welcome, {{ username }} to Lama Robo Advisor!</h2>
+
+        <!-- Financial FAQ Button -->
+        <form action="/financial_FAQ" method="post">
+            <input type="submit" value="Financial FAQ">
+        </form>
+
+        <!-- Singapore Joke Button -->
+        <form action="/joke" method="post">
+            <input type="submit" value="Singapore Joke">
+        </form>
+
+        <!-- Sentiment Analysis Form -->
+        <h1>Welcome to the Sentiment Analysis App</h1>
+        <form action="/textblob_analysis" method="POST">
+            <label for="text">Enter text for sentiment analysis:</label><br>
+            <input type="text" id="text" name="text" required><br><br>
+            <input type="submit" value="Analyze with TextBlob">
+        </form>
+
+        <!-- Links to other routes -->
+        <a href="/financial_FAQ">Financial FAQ</a><br>
+        <a href="/joke">Joke of the Day</a><br>
+    </div>
+</body>
+</html>
